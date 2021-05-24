@@ -1,5 +1,6 @@
-A =[1,2,2,3,4,5]
+A = [1, 3, 5, 7, 8, 9, 11, 22]
 B = [1, 2, 2, 3, 5, 8, 6, 6, 9, 22]
+D = "cokolwiek"
 
 
 def glowa(A):
@@ -42,7 +43,17 @@ def czescWspolna(A, B):
         return czescWspolna(A, B)
     exit()
 
+def reverse(A):
+    if len(A) <= 1:
+        return A
+    else:
+        return A[len(A) - 1] + reverse(A[:len(A) - 1])
 
+
+print(reverse(D))
 
 czescWspolna(A, B)
+
+
+
 
