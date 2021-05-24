@@ -44,10 +44,15 @@ def czescWspolna(A, B):
     exit()
 
 def reverse(A):
-    if len(A) <= 1:
-        return A
+    if(jestPusta(A)):
+
+        if len(A) <= 1:
+            return A
+        else:
+            return A[len(A) - 1] + reverse(A[:len(A) - 1])
     else:
-        return A[len(A) - 1] + reverse(A[:len(A) - 1])
+        exit()
+
 
 
 print(reverse(D))
